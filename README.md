@@ -37,7 +37,7 @@ The purpose of this application is to showcase the integration of real-time mult
 This repository includes the official PDF of my undergraduate thesis, providing a comprehensive technical overview of the project.  
 It includes explanations of the code structure, key functions, and execution flow.
 
-👉🏼 [Official Documentation (in greek)](.project_resources/docs/Documentation_gr.pdf)
+👉🏼 [Official Documentation (in greek)](project_resources/docs/Documentation_gr.pdf)
 
 ## 🧰 Prerequisites
 
