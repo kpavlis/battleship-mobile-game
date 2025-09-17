@@ -9,7 +9,7 @@
 
 This mobile app is a turn-based strategy game inspired by the timeless naval board game. Players place their fleets, challenge opponents, and engage in tactical battles while tracking their progress through detailed statistics and rankings. The app features a clean, intuitive interface, multilingual support, and seamless real-time gameplay powered by Firebase.
 
-> 📌 The `resources` folder contains supporting material such as screenshots, documentation, and database configuration files.
+> 📌 The **`resources`** folder contains supporting material such as screenshots, documentation, and database configuration files.
 
 ## 📱 Features
 
