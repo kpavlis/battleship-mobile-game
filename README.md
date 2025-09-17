@@ -61,14 +61,14 @@ It includes explanations of the code structure, key functions, and execution flo
 ## 📸 Screenshots
 
 **_App Screens:_**  
-> <img width="100" height="220" alt="Bat_Game_1" src="project_resources/media/bat_game_1.png" />
-> <img width="100" height="220" alt="Bat_Game_2" src="project_resources/media/bat_game_2.png" />
-> <img width="100" height="220" alt="Bat_Game_3" src="project_resources/media/bat_game_3.png" />
-> <img width="100" height="220" alt="Bat_Game_4" src="project_resources/media/bat_game_4.png" />
-> <img width="100" height="220" alt="Bat_Game_5" src="project_resources/media/bat_game_5.png" />
-> <img width="100" height="220" alt="Bat_Game_6" src="project_resources/media/bat_game_6.png" />
-> <img width="100" height="220" alt="Bat_Game_7" src="project_resources/media/bat_game_7.png" />
-> <img width="100" height="220" alt="Bat_Game_8" src="project_resources/media/bat_game_8.png" />
+> <img width="100" height="220" alt="Bat_Game_1" src="resources/screenshots/welcome_login_screen.png" />
+> <img width="100" height="220" alt="Bat_Game_2" src="resources/screenshots/registration_form_screen.png" />
+> <img width="100" height="220" alt="Bat_Game_3" src="resources/screenshots/home_instructions_screen.png" />
+> <img width="100" height="220" alt="Bat_Game_4" src="resources/screenshots/opponent_selection_screen.png" />
+> <img width="100" height="220" alt="Bat_Game_5" src="resources/screenshots/battle_request_popup.png" />
+> <img width="100" height="220" alt="Bat_Game_6" src="resources/screenshots/user_statistics_screen.png" />
+> <img width="100" height="220" alt="Bat_Game_7" src="resources/screenshots/live_game_screen_1.png" />
+> <img width="100" height="220" alt="Bat_Game_8" src="resources/screenshots/live_game_screen_2.png" />
 
 
 # 🔒 Code Ownership & Usage Terms
