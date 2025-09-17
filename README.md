@@ -50,12 +50,27 @@ It includes explanations of the code structure, key functions, and execution flo
 
 ## 📦 Installation
 
-1. Clone the repository (or download and decompress the ZIP file):
+1. **Clone the repository (or download and decompress the ZIP file)**
    ```bash
    git clone https://github.com/kpavlis/battleship-mobile-game.git
    cd battleship-mobile-game
 
-2. (Coming soon...)
+2. **Open the project in Android Studio**
+   - Make sure you have the latest stable version installed
+   - Allow Gradle to sync and download dependencies
+
+3. **Create a Firebase Project**
+   - Go to Firebase Console and create a new project
+   - Enable **Authentication** & **Realtime Database** from the "Build" section
+   - Import the provided JSON files for:
+      - Initial data (<a href="/project_resources/firebase_config/battleship_database_schema.json">`battleship_database_schema.json`</a>)
+      - Security rules (<a href="/project_resources/firebase_config/battleship_database_rules.json">`battleship_database_rules.json`</a>)
+
+4. **Connect your newly created Firebase Project with the project via Android Studio UI**
+
+5. **Build and run the app**
+   - Connect an Android device or use an emulator
+   - Click Run or use  to launch the app
 
 
 ## 📸 Screenshots
