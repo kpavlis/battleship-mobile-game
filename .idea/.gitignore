@@ -1,5 +1,5 @@
 # Default ignored files
 /shelf/
 /workspace.xml
-.idea/*agent.xml
-.idea/*edit.xml
+/*agent.xml
+/*edit.xml
