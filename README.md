@@ -32,7 +32,7 @@ This mobile app is a turn-based strategy game inspired by the timeless naval boa
 
 The purpose of this application is to showcase the integration of real-time multiplayer mechanics within a mobile environment using Firebase technologies. It was developed as part of my undergraduate thesis to demonstrate advanced Android development skills, bilingual UI/UX design, and secure user authentication. The project also reflects my academic journey and passion for impactful software engineering, aiming to deliver a polished, engaging experience while laying the groundwork for future enhancements in mobile game development. **It is developed solely for academic and research purposes.**
 
-## 📚 Official Documentation
+## 📙 Official Documentation
 
 This repository includes the official PDF of my undergraduate thesis, providing a comprehensive technical overview of the project.  
 It includes explanations of the code structure, key functions, and execution flow.
@@ -50,12 +50,27 @@ It includes explanations of the code structure, key functions, and execution flo
 
 ## 📦 Installation
 
-1. Clone the repository (or download and decompress the ZIP file):
+1. **Clone the repository (or download and decompress the ZIP file)**
    ```bash
    git clone https://github.com/kpavlis/battleship-mobile-game.git
    cd battleship-mobile-game
 
-2. (Coming soon...)
+2. **Open the project in Android Studio**
+   - Make sure you have the latest stable version installed
+   - Allow Gradle to sync and download dependencies
+
+3. **Create a Firebase Project**
+   - Go to Firebase Console and create a new project
+   - Enable **Authentication** & **Realtime Database** from the "Build" section
+   - Import the provided JSON files for:
+      - Initial data (<a href="/project_resources/firebase_config/battleship_database_schema.json">`battleship_database_schema.json`</a>)
+      - Security rules (<a href="/project_resources/firebase_config/battleship_database_rules.json">`battleship_database_rules.json`</a>)
+
+4. **Connect your newly created Firebase Project with the project via Android Studio UI**
+
+5. **Build and run the app**
+   - Connect an Android device or use an emulator
+   - Click Run or use  to launch the app
 
 
 ## 📸 Screenshots
