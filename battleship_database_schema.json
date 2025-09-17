@@ -1,0 +1,35 @@
+{
+  "Games": {
+    "sample_userID": {
+      "is_available": false,
+      "player_1": "sample_userID",
+      "player_1_message": "",
+      "player_1_response": "",
+      "player_2": "",
+      "player_2_message": "",
+      "player_2_response": "",
+      "request_response": ""
+    }
+  },
+  "Users": {
+    "sample_userID": {
+      "device_id": "sample_device_id",
+      "email": "sample_email",
+      "first_name": "sample_first_name",
+      "last_name": "sample_last_name",
+      "level": 1,
+      "losses": 0,
+      "points": 0,
+      "ships": [
+        "4344",
+        "717273",
+        "16171819",
+        "0001020304",
+        "495969798999"
+      ],
+      "user_id": "sample_userID",
+      "win_rate": 0,
+      "wins": 0
+    }
+  }
+}
