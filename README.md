@@ -32,6 +32,13 @@ This mobile app is a turn-based strategy game inspired by the timeless naval boa
 
 The purpose of this application is to showcase the integration of real-time multiplayer mechanics within a mobile environment using Firebase technologies. It was developed as part of my undergraduate thesis to demonstrate advanced Android development skills, bilingual UI/UX design, and secure user authentication. The project also reflects my academic journey and passion for impactful software engineering, aiming to deliver a polished, engaging experience while laying the groundwork for future enhancements in mobile game development. **It is developed solely for academic and research purposes.**
 
+## 📚 Official Documentation
+
+This repository includes the official PDF of my undergraduate thesis, providing a comprehensive technical overview of the project.  
+It includes explanations of the code structure, key functions, and execution flow.
+
+👉🏼 [Official Documentation (in greek)](project_resources/docs/Documentation_gr.pdf)
+
 ## 🧰 Prerequisites
 
 - **Android Studio** (latest stable version)
