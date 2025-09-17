@@ -1,0 +1,20 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <solid android:color="#BFF8F6"/>
+            <corners android:radius="5dp"/> <!-- Corner radius -->
+            <stroke android:width="3dp" android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent"/>
+            <corners android:radius="5dp"/> <!-- Corner radius -->
+            <stroke android:width="2dp" android:color="#F41D0C"/>
+        </shape>
+    </item>
+
+    <item android:drawable="@drawable/flame" android:gravity="center" android:width="@dimen/game_receive_attack_20" android:height="@dimen/game_receive_attack_20"/>
+</layer-list>

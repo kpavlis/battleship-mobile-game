@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView_account_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Business_Logic.AccountFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_settings"
+            android:textSize="@dimen/account_fragment_text_view_title"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <GridLayout
+                    android:id="@+id/game_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rowCount="10"
+                    android:columnCount="10">
+
+                    <!-- Buttons area -->
+
+                </GridLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ship_type_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ship_to_move"
+            android:textSize="@dimen/account_fragment_text_view_subtitle"
+            android:textStyle="italic"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radio_ship_type_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ship_1_radio"
+                            android:textSize="@dimen/account_fragment_text_view_ship_position_radios"
+                            android:gravity="center"
+                            android:enabled="false"
+                            android:button="@null"
+                            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                            android:drawableTop="@drawable/ship_2_settings"
+                            android:layout_marginEnd="8dp"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_ship_type_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ship_2_radio"
+                            android:textSize="@dimen/account_fragment_text_view_ship_position_radios"
+                            android:gravity="center"
+                            android:enabled="false"
+                            android:button="@null"
+                            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                            android:drawableTop="@drawable/ship_3_settings"
+                            android:layout_marginEnd="8dp"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_ship_type_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ship_3_radio"
+                            android:textSize="@dimen/account_fragment_text_view_ship_position_radios"
+                            android:gravity="center"
+                            android:enabled="false"
+                            android:button="@null"
+                            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                            android:drawableTop="@drawable/ship_4_settings"
+                            android:layout_marginEnd="8dp"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_ship_type_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ship_4_radio"
+                            android:textSize="@dimen/account_fragment_text_view_ship_position_radios"
+                            android:gravity="center"
+                            android:enabled="false"
+                            android:button="@null"
+                            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                            android:drawableTop="@drawable/ship_5_settings"
+                            android:layout_marginEnd="8dp"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_ship_type_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ship_5_radio"
+                            android:textSize="@dimen/account_fragment_text_view_ship_position_radios"
+                            android:gravity="center"
+                            android:enabled="false"
+                            android:button="@null"
+                            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                            android:drawableTop="@drawable/ship_6_settings"/>
+                    </RadioGroup>
+
+                </HorizontalScrollView>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/ship_position_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ship_position"
+            android:textSize="@dimen/account_fragment_text_view_subtitle"
+            android:textStyle="italic"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="18dp"
+            android:enabled="false"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_horizontal_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/horizontal_ship_position"
+                android:enabled="false"
+                android:textSize="@dimen/account_fragment_text_view_ship_position_radios"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                android:drawableBottom="@drawable/horizontal_ship" />
+
+            <RadioButton
+                android:id="@+id/radio_vertical_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vertical_ship_position"
+                android:textSize="@dimen/account_fragment_text_view_ship_position_radios"
+                android:enabled="false"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                android:drawableBottom="@drawable/vertical_ship"
+                android:layout_marginStart="20dp"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/relocate_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ships_random_relocate"
+                        android:textSize="@dimen/account_fragment_buttons"
+                        android:layout_marginEnd="25dp" />
+
+
+                    <Button
+                        android:id="@+id/edit_ships_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ships_custom_edit"
+                        android:textSize="@dimen/account_fragment_buttons"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_settings"
+            android:textSize="@dimen/account_fragment_text_view_title"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="@dimen/account_fragment_text_views_width"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/edit_text_size"
+                android:text="@string/email"
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+                android:id="@+id/email_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/account_fragment_edit_text_heights"
+                android:ems="9"
+                android:inputType="textEmailAddress"
+                android:textSize="@dimen/edit_text_size"
+                android:enabled="false"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:layout_width="@dimen/account_fragment_text_views_width"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/edit_text_size"
+                android:text="@string/password"
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+                android:id="@+id/password_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/account_fragment_edit_text_heights"
+                android:ems="9"
+                android:inputType="textPassword"
+                android:textSize="@dimen/edit_text_size"
+                android:enabled="false" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:layout_width="@dimen/account_fragment_text_views_width"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/edit_text_size"
+                android:text="@string/name"
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+                android:id="@+id/name_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/account_fragment_edit_text_heights"
+                android:ems="9"
+                android:inputType="text"
+                android:textSize="@dimen/edit_text_size"
+                android:enabled="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:layout_width="@dimen/account_fragment_text_views_width"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/edit_text_size"
+                android:text="@string/surname"
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+                android:id="@+id/surname_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/account_fragment_edit_text_heights"
+                android:ems="9"
+                android:inputType="text"
+                android:textSize="@dimen/edit_text_size"
+                android:enabled="false" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/change_password_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_password"
+            android:layout_gravity="center"
+            android:enabled="false"
+            android:textSize="14sp"
+            android:scaleY="@dimen/account_fragment_scale_type"
+            android:scaleX="@dimen/account_fragment_scale_type"/>
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/account_fragment_buttons"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_settings"
+            android:textSize="@dimen/account_fragment_text_view_title"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_display_language"
+            android:textSize="@dimen/account_fragment_text_view_subtitle"
+            android:textStyle="italic"
+            android:layout_marginBottom="10dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_english_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/english_language"
+                android:gravity="center"
+                android:textSize="@dimen/account_fragment_text_view_lang_theme_radios"
+                android:button="@null"
+                android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                android:layout_marginEnd="25dp" />
+
+            <RadioButton
+                android:id="@+id/radio_greek_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/greek_language"
+                android:gravity="center"
+                android:textSize="@dimen/account_fragment_text_view_lang_theme_radios"
+                android:button="@null"
+                android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                android:layout_marginEnd="25dp"/>
+
+            <RadioButton
+                android:id="@+id/radio_italian_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/italian_language"
+                android:gravity="center"
+                android:textSize="@dimen/account_fragment_text_view_lang_theme_radios"
+                android:button="@null"
+                android:drawableTop="?android:attr/listChoiceIndicatorSingle"/>
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_app_theme"
+            android:textSize="@dimen/account_fragment_text_view_subtitle"
+            android:textStyle="italic"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_default_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_theme"
+                android:gravity="center"
+                android:textSize="@dimen/account_fragment_text_view_lang_theme_radios"
+                android:button="@null"
+                android:drawableTop="@drawable/auto_theme_icon"
+                android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                android:layout_marginEnd="25dp" />
+
+            <RadioButton
+                android:id="@+id/radio_light_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/light_theme"
+                android:gravity="center"
+                android:textSize="@dimen/account_fragment_text_view_lang_theme_radios"
+                android:button="@null"
+                android:drawableTop="@drawable/light_theme_icon"
+                android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                android:layout_marginEnd="25dp" />
+
+            <RadioButton
+                android:id="@+id/radio_dark_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dark_theme"
+                android:gravity="center"
+                android:textSize="@dimen/account_fragment_text_view_lang_theme_radios"
+                android:button="@null"
+                android:drawableTop="@drawable/dark_theme_icon"
+                android:drawableBottom="?android:attr/listChoiceIndicatorSingle"/>
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/default_theme_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_theme_description"
+            android:textSize="@dimen/account_fragment_text_view_theme_description"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"/>
+
+        <Button
+            android:id="@+id/delete_account_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_account"
+            android:textSize="@dimen/account_fragment_buttons"
+            android:gravity="center"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"/>
+
+        <Button
+            android:id="@+id/sign_out_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_out"
+            android:textSize="@dimen/account_fragment_buttons"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+

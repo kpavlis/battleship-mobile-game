@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Real_Time_Game_v2" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+    <color name="message_box_background">#403737</color>
+    <color name="refresh_status_background">#5B2121</color>
+    <color name="game_action_bar_background">#1A4CF8</color>
+    <color name="alert_dialog_background">#403737</color>
+    <color name="request_alert_dialog_stroke">#FDDD68</color>
+    <color name="won_game_alert_dialog_stroke">#02FB11</color>
+    <color name="lost_game_alert_dialog_stroke">#FD0808</color>
+    <color name="statistics_top_players_background">#523C29</color>
+    <color name="statistics_top_players_border">#815B22</color>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:width="@dimen/account_fragment_ship_icon_width" android:height="@dimen/account_fragment_ship_icon_height" >
+
+        <bitmap
+            android:src="@drawable/ship_4"
+            android:gravity="fill" />
+    </item>
+
+</layer-list>

@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Business_Logic.BattleshipActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="2dp"
+        android:paddingBottom="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/game_action_bar_background">
+
+        <LinearLayout
+            android:id="@+id/your_turn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_turn"
+                android:textSize="@dimen/battleship_activity_action_bar_text_size"
+                android:textStyle="italic|bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✅"
+                android:textSize="@dimen/battleship_activity_action_bar_icon_size"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/opponent_turn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/opponent_turn"
+                android:textSize="@dimen/battleship_activity_action_bar_text_size"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏳"
+                android:textSize="@dimen/battleship_activity_action_bar_icon_size"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/opponent_responding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/opponent_is_responding"
+                android:textSize="@dimen/battleship_activity_action_bar_text_size"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✨"
+                android:textSize="@dimen/battleship_activity_action_bar_icon_size"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView_battleship_activity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        tools:context=".Business_Logic.BattleshipActivity"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_opponent_attack_panel"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/battleship_activity_title_text_size"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"/>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <GridLayout
+                        android:id="@+id/action_game_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:rowCount="10"
+                        android:columnCount="10">
+
+                        <!-- Buttons area -->
+
+                    </GridLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/opponent_fleet"
+                android:textSize="@dimen/battleship_activity_sub_title_text_size"
+                android:textStyle="italic"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="center">
+
+                                    <FrameLayout
+                                        android:layout_width="@dimen/battleship_activity_opponent_fleet_image_width"
+                                        android:layout_height="@dimen/battleship_activity_opponent_fleet_image_height">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ship_2" />
+
+                                        <ImageView
+                                            android:id="@+id/attack_2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/attack"
+                                            android:visibility="invisible"/>
+
+
+                                    </FrameLayout>
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/ship_1_radio"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textSize="@dimen/battleship_activity_opponent_fleet_text_size"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginStart="20dp"
+                                    android:gravity="center">
+
+                                    <FrameLayout
+                                        android:layout_width="@dimen/battleship_activity_opponent_fleet_image_width"
+                                        android:layout_height="@dimen/battleship_activity_opponent_fleet_image_height">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ship_3" />
+
+                                        <ImageView
+                                            android:id="@+id/attack_3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/attack"
+                                            android:visibility="invisible"/>
+
+
+                                    </FrameLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/ship_2_radio"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textSize="@dimen/battleship_activity_opponent_fleet_text_size"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginStart="20dp"
+                                    android:gravity="center">
+
+                                    <FrameLayout
+                                        android:layout_width="@dimen/battleship_activity_opponent_fleet_image_width"
+                                        android:layout_height="@dimen/battleship_activity_opponent_fleet_image_height">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/ship_4" />
+
+                                        <ImageView
+                                            android:id="@+id/attack_4"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/attack"
+                                            android:visibility="invisible"/>
+
+
+                                    </FrameLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/ship_3_radio"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textSize="@dimen/battleship_activity_opponent_fleet_text_size"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="center">
+
+                                    <FrameLayout
+                                        android:layout_width="@dimen/battleship_activity_opponent_fleet_image_width"
+                                        android:layout_height="@dimen/battleship_activity_opponent_fleet_image_height">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ship_5" />
+
+                                        <ImageView
+                                            android:id="@+id/attack_5"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/attack"
+                                            android:visibility="invisible"/>
+
+
+                                    </FrameLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/ship_4_radio"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textSize="@dimen/battleship_activity_opponent_fleet_text_size"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginStart="20dp"
+                                    android:gravity="center">
+
+                                    <FrameLayout
+                                        android:layout_width="@dimen/battleship_activity_opponent_fleet_image_width"
+                                        android:layout_height="@dimen/battleship_activity_opponent_fleet_image_height">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ship_6" />
+
+                                        <ImageView
+                                            android:id="@+id/attack_6"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/attack"
+                                            android:visibility="invisible"/>
+
+
+                                    </FrameLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/ship_5_radio"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textSize="@dimen/battleship_activity_opponent_fleet_text_size"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_ships_panel"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/battleship_activity_title_text_size"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <GridLayout
+                        android:id="@+id/secondary_game_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:rowCount="10"
+                        android:columnCount="10">
+
+                        <!-- Buttons area -->
+
+                    </GridLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alive_ships"
+                android:textSize="@dimen/battleship_activity_sub_title_text_size"
+                android:textStyle="italic"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:id="@+id/down_battleship_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/my_ship_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="@dimen/battleship_activity_your_fleet_image_width"
+                                android:layout_height="@dimen/battleship_activity_your_fleet_image_height"
+                                android:src="@drawable/ship_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ship_1_radio"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="@dimen/battleship_activity_your_fleet_text_size"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/my_ship_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="2dp"
+                            android:gravity="center">
+
+
+                            <ImageView
+                                android:layout_width="@dimen/battleship_activity_your_fleet_image_width"
+                                android:layout_height="@dimen/battleship_activity_your_fleet_image_height"
+                                android:src="@drawable/ship_3" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ship_2_radio"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="@dimen/battleship_activity_your_fleet_text_size"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/my_ship_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="2dp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="@dimen/battleship_activity_your_fleet_image_width"
+                                android:layout_height="@dimen/battleship_activity_your_fleet_image_height"
+                                android:src="@drawable/ship_4" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ship_3_radio"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="@dimen/battleship_activity_your_fleet_text_size"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/my_ship_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="2dp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="@dimen/battleship_activity_your_fleet_image_width"
+                                android:layout_height="@dimen/battleship_activity_your_fleet_image_height"
+                                android:src="@drawable/ship_5" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ship_4_radio"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="@dimen/battleship_activity_your_fleet_text_size"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/my_ship_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="2dp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="@dimen/battleship_activity_your_fleet_image_width"
+                                android:layout_height="@dimen/battleship_activity_your_fleet_image_height"
+                                android:src="@drawable/ship_6" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ship_5_radio"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="@dimen/battleship_activity_your_fleet_text_size"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp">
+
+        <LinearLayout
+            android:id="@+id/message_box_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="2dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/message_box_background"
+            android:layout_marginBottom="5dp">
+
+
+                <EditText
+                    android:id="@+id/message"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:hint="@string/type_your_message"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/battleship_activity_messages_field_text_size"/>
+
+                <Button
+                    android:id="@+id/message_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/send"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="@dimen/battleship_activity_messages_text_size"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/battleship_activity_messages_icon_size_width"
+                    android:layout_height="@dimen/battleship_activity_messages_icon_size_height"
+                    android:src="@drawable/message_icon_2"
+                    android:layout_marginEnd="5dp"/>
+
+
+                <TextView
+                    android:id="@+id/opponent_message"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:scrollbars="vertical"
+                    android:hint="@string/opponent_message"
+                    android:textSize="@dimen/battleship_activity_messages_text_size"/>
+
+
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

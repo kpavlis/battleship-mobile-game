@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Business_Logic.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="@dimen/home_fragment_image_width"
+            android:layout_height="@dimen/home_fragment_image_heght"
+            android:src="@drawable/app_icon"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Battleship Game"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="@dimen/home_fragment_text_view_brand_name"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="serif"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_intro_text"
+            android:textSize="@dimen/home_fragment_text_view_size"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="35dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/home_fragment_text_view_info"
+                android:textAlignment="center"
+                android:textStyle="bold|italic"
+                android:fontFamily="sans-serif-light"
+                android:layout_weight="1"
+                android:text="@string/home_game_text"/>
+
+            <ImageView
+                android:layout_width="@dimen/home_fragment_icons_width"
+                android:layout_height="@dimen/home_fragment_icons_height"
+                android:src="@drawable/game_image_home"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp">
+
+            <ImageView
+                android:layout_width="@dimen/home_fragment_icons_width"
+                android:layout_height="@dimen/home_fragment_icons_height"
+                android:src="@drawable/statistics_image_home"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/home_fragment_text_view_info"
+                android:textAlignment="center"
+                android:textStyle="bold|italic"
+                android:fontFamily="sans-serif-light"
+                android:layout_weight="1"
+                android:text="@string/home_statistics_text"/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/home_fragment_text_view_info"
+                android:textAlignment="center"
+                android:textStyle="bold|italic"
+                android:fontFamily="sans-serif-light"
+                android:layout_weight="1"
+                android:text="@string/home_settings_text"/>
+
+            <ImageView
+                android:layout_width="@dimen/home_fragment_icons_width"
+                android:layout_height="@dimen/home_fragment_icons_height"
+                android:src="@drawable/settings_image_home"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_fragment_bottom_image_height"
+            android:baselineAlignBottom="true"
+            android:src="@drawable/wave_screen"
+            android:scaleType="fitXY"
+            android:layout_marginTop="35dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

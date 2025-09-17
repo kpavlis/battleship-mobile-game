@@ -1,0 +1,13 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/orange"/> <!-- Background color -->
+            <corners android:radius="5dp"/> <!-- Corner radius -->
+            <stroke android:width="0dp" android:color="@color/orange"/> <!-- Border color and width -->
+
+            <gradient android:startColor="@android:color/holo_orange_dark" android:endColor="@android:color/holo_orange_light"
+                android:angle="100" android:centerX="80%" android:centerY="80%"/>
+
+        </shape>
+    </item>
+</layer-list>

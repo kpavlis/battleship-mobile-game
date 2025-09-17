@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <item android:width="@dimen/account_fragment_theme_icon" android:height="@dimen/account_fragment_theme_icon"> >
+
+        <bitmap
+            android:src="@drawable/day_mode_icon"
+            android:gravity="fill" />
+    </item>
+
+</layer-list>

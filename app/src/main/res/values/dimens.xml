@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SignIn & SignUp activities -->
+    <dimen name="text_size_view">30sp</dimen>
+    <dimen name="text_size_buttons">14sp</dimen>
+    <dimen name="text_size_sub_view">23sp</dimen>
+    <dimen name="edit_text_size">20sp</dimen>
+    <dimen name="log_in_image_width">220dp</dimen>
+    <dimen name="log_in_image_height">110dp</dimen>
+    <dimen name="create_account_prompt">22sp</dimen>
+    <dimen name="sign_up_image_width_and_height">90dp</dimen>
+    <dimen name="progress_bar_size">45dp</dimen>
+
+    <!-- Battleship Activity -->
+    <dimen name="battleship_activity_action_bar_text_size">18sp</dimen>
+    <dimen name="battleship_activity_action_bar_icon_size">25sp</dimen>
+    <dimen name="battleship_activity_title_text_size">18sp</dimen>
+    <dimen name="battleship_activity_sub_title_text_size">17sp</dimen>
+    <dimen name="battleship_activity_panel_button_size_big">86px</dimen>
+    <dimen name="battleship_activity_panel_button_size_small">70px</dimen>
+    <dimen name="battleship_activity_panel_text_size">5sp</dimen>
+    <dimen name="battleship_activity_opponent_fleet_image_height">45dp</dimen>
+    <dimen name="battleship_activity_opponent_fleet_image_width">100dp</dimen>
+    <dimen name="battleship_activity_opponent_fleet_text_size">14sp</dimen>
+    <dimen name="battleship_activity_your_fleet_image_height">30dp</dimen>
+    <dimen name="battleship_activity_your_fleet_image_width">70dp</dimen>
+    <dimen name="battleship_activity_your_fleet_text_size">12sp</dimen>
+    <dimen name="battleship_activity_messages_text_size">14sp</dimen>
+    <dimen name="battleship_activity_messages_icon_size_width">35dp</dimen>
+    <dimen name="battleship_activity_messages_icon_size_height">40dp</dimen>
+    <dimen name="battleship_activity_messages_field_height">48dp</dimen>
+    <dimen name="battleship_activity_messages_field_text_size">14sp</dimen>
+
+    <!-- HomeFragment -->
+    <dimen name="home_fragment_image_heght">190dp</dimen>
+    <dimen name="home_fragment_image_width">300dp</dimen>
+    <dimen name="home_fragment_text_view_brand_name">28sp</dimen>
+    <dimen name="home_fragment_text_view_size">18sp</dimen>
+    <dimen name="home_fragment_text_view_info">15sp</dimen>
+    <dimen name="home_fragment_icons_height">100dp</dimen>
+    <dimen name="home_fragment_icons_width">80dp</dimen>
+    <dimen name="home_fragment_bottom_image_height">150dp</dimen>
+
+    <!-- GameFragment -->
+    <dimen name="game_fragment_text_view_title">23sp</dimen>
+    <dimen name="game_fragment_text_view_description">13.5sp</dimen>
+    <dimen name="game_fragment_progress_bar">50dp</dimen>
+    <dimen name="game_fragment_inner_text_view">16sp</dimen>
+    <dimen name="game_fragment_bottom_information_elements">15sp</dimen>
+    <dimen name="game_fragment_image_no_players">100dp</dimen>
+    <dimen name="game_fragment_margins_bottom_button">10dp</dimen>
+
+    <!-- StatisticsFragment -->
+    <dimen name="statistics_fragment_text_view_title">23sp</dimen>
+    <dimen name="statistics_fragment_text_view_description">16sp</dimen>
+    <dimen name="statistics_fragment_image_dimensions">100dp</dimen>
+    <dimen name="statistics_fragment_inner_text_view">18sp</dimen>
+    <dimen name="statistics_fragment_bottom_information_text_view">14sp</dimen>
+    <dimen name="statistics_fragment_progress_bar_height">23dp</dimen>
+    <dimen name="statistics_fragment_progress_bar_indicators">15sp</dimen>
+    <dimen name="statistics_fragment_buttons">14sp</dimen>
+    <dimen name="statistics_fragment_global_statistics_title">20sp</dimen>
+    <dimen name="statistics_fragment_global_statistics_rank">19sp</dimen>
+    <dimen name="statistics_fragment_global_statistics_names">16sp</dimen>
+    <dimen name="statistics_fragment_global_statistics_values">18sp</dimen>
+    <dimen name="statistics_fragment_margins">20dp</dimen>
+
+    <!-- AccountFragment -->
+    <dimen name="account_fragment_text_view_title">23sp</dimen>
+    <dimen name="account_fragment_text_view_subtitle">20sp</dimen>
+    <dimen name="account_fragment_text_view_ship_position_radios">14sp</dimen>
+    <dimen name="account_fragment_text_view_lang_theme_radios">18sp</dimen>
+    <dimen name="account_fragment_text_view_theme_description">14sp</dimen>
+    <dimen name="account_fragment_buttons">14sp</dimen>
+    <dimen name="account_fragment_margin_between_text_view">20dp</dimen>
+    <dimen name="account_fragment_text_views_width">100dp</dimen>
+    <dimen name="account_fragment_bottom_button_height">40dp</dimen>
+    <dimen name="account_fragment_edit_text_heights">48dp</dimen>
+    <dimen name="account_fragment_ship_icon_width">66dp</dimen>
+    <dimen name="account_fragment_ship_icon_height">30dp</dimen>
+    <dimen name="account_fragment_ship_position_icon">45dp</dimen>
+    <dimen name="account_fragment_theme_icon">50dp</dimen>
+    <dimen name="account_fragment_scale_type">1</dimen>
+    <dimen name="account_fragment_panel_button_size">86px</dimen>
+    <dimen name="account_fragment_panel_text_size">5sp</dimen>
+
+    <!-- Opponent Card -->
+    <dimen name="opponent_card_text_views">15sp</dimen>
+    <dimen name="opponent_card_button">14sp</dimen>
+
+    <!-- Battle Drawables -->
+    <dimen name="game_make_attack">25dp</dimen>
+    <dimen name="game_receive_attack_25">25dp</dimen>
+    <dimen name="game_receive_attack_20">20dp</dimen>
+
+</resources>

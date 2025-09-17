@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.unipi.kpavlis.real_time_game_v2.Business_Logic.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.unipi.kpavlis.real_time_game_v2.Business_Logic.GameFragment"
+        android:label="Game"
+        tools:layout="@layout/fragment_game" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.unipi.kpavlis.real_time_game_v2.Business_Logic.StatisticsFragment"
+        android:label="Statistics"
+        tools:layout="@layout/fragment_statistics" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.unipi.kpavlis.real_time_game_v2.Business_Logic.AccountFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_account" />
+
+</navigation>

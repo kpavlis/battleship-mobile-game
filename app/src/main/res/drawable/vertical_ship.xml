@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/settings_ship_position_vertical" android:width="@dimen/account_fragment_ship_position_icon" android:height="@dimen/account_fragment_ship_position_icon" >
+
+        <bitmap
+            android:src="@drawable/vertical_flip"
+            android:gravity="fill" />
+    </item>
+
+</layer-list>

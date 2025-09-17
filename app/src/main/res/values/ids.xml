@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- AccountFragment -->
+    <item name="tag_row" type="id"/>
+    <item name="tag_col" type="id"/>
+
+    <!-- MainActivity -->
+    <item name="auto_logIn_progressBar" type="id"/>
+</resources>

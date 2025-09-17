@@ -1,0 +1,10 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#BFF8F6"/> <!-- Background color gray -->
+            <corners android:radius="5dp"/> <!-- Corner radius -->
+            <stroke android:width="2dp" android:color="#BFF8F6"/> <!-- Border color and width -->
+        </shape>
+    </item>
+    <item android:drawable="@drawable/played_symbol" android:gravity="center" android:width="@dimen/game_receive_attack_25" android:height="@dimen/game_receive_attack_25"/>
+</layer-list>
